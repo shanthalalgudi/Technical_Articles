@@ -1,0 +1,13 @@
+The CVSS 3.1 framework (Common Vulnerability Scoring System version 3.1) is a standardized system used to evaluate and communicate the severity of software vulnerabilities. 
+
+How to interpret a severity of this vulnerability : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+
+This vulnerability allows remote attackers to execute arbitrary code on Netatalk. Netatalk is opensource software package that can be used as file server for MAC computers. By executing remote code , the Attacker can easily get a foothold on the corporate network and get access to the system privileges. With the unauthorized network access, this could then lead to loss of confidential IP and data theft.
+
+-> AV:N implies Attack Vector value for this Vulnerability is 'Network'. 
+-> AC:L implies the attack complexity is Low as the as the software code can be executed without need for any sophisticated system and the attacker can expect repeatable success against the vulnerable system.
+-> PR:N and UI:N imply Privileges and User Interaction required value for this vulnerability is 'None' as the attacker is unauthorized prior to the system attack and doesn't need any special access to the system files. All they need is the remote software code at their end to take advantage of an unknown or unaddressed security flaw.
+
+-> implies Confidentiality impact for this vulnerability 'High' is appropriate, as the attacker can retrieve critical information.
+-> implies Integrity impact for this vulnerability is 'High' is appropriate as the attacker can modify the critical data (Software, API's, Libraries)
+-> implies Availability impact for this vulnerability is 'High' as the attacker can repeatedly exploit the system vulnerability and the service can be disrupted or unavailable for the intended users.
